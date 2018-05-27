@@ -1,0 +1,15 @@
+[package]
+name = "wasm-calculator"
+version = "0.1.0"
+authors = ["Jaroslaw Weber <jaroslaw.weber@gmail.com>"]
+
+[dependencies]
+stdweb = "0.4.6"
+yew = { git = "https://github.com/DenisKolodin/yew" }
+meval = "0.1.0"
+
+
+[profile.release]
+lto = true
+opt-level = 'z' # `s` or 'z'
+debug = false
